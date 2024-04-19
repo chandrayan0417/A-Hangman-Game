@@ -1,0 +1,65 @@
+/* Importing Google font - Open Sans */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #41b06e;
+}
+
+.container {
+  width: 850px;
+  background: #fff5e0;
+  display: flex;
+  gap: 70px;
+  align-items: flex-end;
+  padding: 60px 40px;
+  border-radius: 10px;
+}
+
+.hangman img {
+  max-width: 270px;
+}
+.hangman h1 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.word-display {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+}
+.word-display .letter {
+  width: 28px;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  border-bottom: 3px solid #141e46;
+}
+
+.word-display .letter.guesse {
+  border-color: transparent;
+  margin: -40px 0 35px;
+
+}
+
+.game-box h4 {
+  text-align: center;
+  font-size: 1.1rem
+  font-
+}
