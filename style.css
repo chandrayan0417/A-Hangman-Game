@@ -12,7 +12,8 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: #8DECB4;
+  padding: 0 10px;
+  background: #8decb4;
   user-select: none;
 }
 
@@ -24,7 +25,7 @@ body {
   align-items: flex-end;
   padding: 60px 40px;
   border-radius: 10px;
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.3);
 }
 
 .hangman img {
@@ -57,7 +58,6 @@ body {
 .word-display .letter.guesse {
   border-color: transparent;
   margin: -40px 0 35px;
-
 }
 
 .game-box h4 {
@@ -72,33 +72,96 @@ body {
 }
 
 .game-box .guesses-text b {
-color: hsl(0, 100%, 68%);
+  color: hsl(0, 100%, 68%);
 }
 
-.game-box .keyboard{
+.game-box .keyboard {
   display: flex;
-  gap:  5px ;
+  gap: 5px;
   flex-wrap: wrap;
   margin-top: 40px;
   padding: 0 5px;
   justify-content: center;
 }
 
-.keyboard button{
+:where(.game-exe, .keyboard) button {
   color: #fff5e0;
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
   outline: none;
   border-radius: 4px;
-  padding: 7px;
   border: none;
   text-transform: uppercase;
   background-color: #41b06e;
-  width: calc(100% / 9 - 5px);
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
 }
 
-.keyboard button:hover{
-  background:#8DECB4;
+.keyboard button {
+  padding: 7px;
+  width: calc(100% / 9 - 5px);
+}
+
+:where(.game-exe, .keyboard) button:hover {
+  background: #8decb4;
+}
+
+.game-exe {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-exe .con {
+  background: #fff5e0;
+  max-width: 425px;
+  width: 100%;
+  text-align: center;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.game-exe img {
+  max-width: 135px;
+  margin-bottom: 20px;
+}
+
+.game-exe h4 {
+  font-size: 1.55rem;
+}
+
+.game-exe p {
+  font-size: 1.15rem;
+  margin: 15px 0 30px;
+  font-weight: 500;
+}
+
+.game-exe p b {
+  color: #8decb4;
+  font-weight: 600;
+}
+
+.game-exe button {
+  padding: 12px 25px;
+}
+
+@media (max-width: 785px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 40px;
+  }
+
+  .hangman img {
+    max-width: 200px;
+  }
+  .hangman h1 {
+    display: none;
+  }
 }
