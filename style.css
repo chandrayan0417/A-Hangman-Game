@@ -1,5 +1,6 @@
 /* Importing Google font - Open Sans */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -31,6 +32,7 @@ body {
 .hangman img {
   max-width: 270px;
 }
+
 .hangman h1 {
   font-size: 1.5rem;
   margin-top: 2rem;
@@ -45,6 +47,7 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 .word-display .letter {
   width: 28px;
   font-size: 2rem;
@@ -55,7 +58,7 @@ body {
   border-bottom: 3px solid #141e46;
 }
 
-.word-display .letter.guesse {
+.word-display .letter.guessed {
   border-color: transparent;
   margin: -40px 0 35px;
 }
@@ -82,29 +85,6 @@ body {
   margin-top: 40px;
   padding: 0 5px;
   justify-content: center;
-}
-
-:where(.game-exe, .keyboard) button {
-  color: #fff5e0;
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  outline: none;
-  border-radius: 4px;
-  border: none;
-  text-transform: uppercase;
-  background-color: #41b06e;
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
-  transition: background 0.2s;
-}
-
-.keyboard button {
-  padding: 7px;
-  width: calc(100% / 9 - 5px);
-}
-
-:where(.game-exe, .keyboard) button:hover {
-  background: #8decb4;
 }
 
 .game-exe {
@@ -162,6 +142,7 @@ body {
   .hangman img {
     max-width: 200px;
   }
+
   .hangman h1 {
     display: none;
   }
@@ -177,6 +158,28 @@ body {
 
   body {
     padding: 0 5px;
-    min-height: 70vh;
   }
+}
+
+:where(.game-exe, .keyboard) button {
+  color: #fff5e0;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+  border-radius: 4px;
+  border: none;
+  text-transform: uppercase;
+  background-color: #41b06e;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+  transition: background 0.2s;
+}
+
+.keyboard button {
+  padding: 7px;
+  width: calc(100% / 9 - 5px);
+}
+
+:where(.game-exe, .keyboard) button:hover {
+  background: #8decb4;
 }
