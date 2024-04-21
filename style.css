@@ -94,7 +94,8 @@ body {
   border: none;
   text-transform: uppercase;
   background-color: #41b06e;
-  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+  transition: background 0.2s;
 }
 
 .keyboard button {
@@ -163,5 +164,19 @@ body {
   }
   .hangman h1 {
     display: none;
+  }
+
+  .game-box .keyboard {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    padding: 0 4px;
+    justify-content: center;
+  }
+
+  body {
+    padding: 0 5px;
+    min-height: 70vh;
   }
 }
