@@ -26,7 +26,7 @@ Hangman is a classic word guessing game where the player must guess a word by su
 
 You can play the game [here](https://chandrayan0417.github.io/A-Hangman-Game/).
 
-![Hangman Demo](DEMO-SS.png)
+![Hangman Demo](/images/DEMO-SS.png)
 
 ## How to Play
 
