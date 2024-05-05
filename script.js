@@ -9,266 +9,63 @@ let playAgainBtn;
 
 // Word list
 const wordList = [
-    {
-        word: "guitar",
-        hint: "A musical instrument with strings."
-    },
-    {
-        word: "oxygen",
-        hint: "A colorless, odorless gas essential for life."
-    },
-    {
-        word: "mountain",
-        hint: "A large natural elevation of the Earth's surface."
-    },
-    {
-        word: "painting",
-        hint: "An art form using colors on a surface to create images or expression."
-    },
-    {
-        word: "astronomy",
-        hint: "The scientific study of celestial objects and phenomena."
-    },
-    {
-        word: "football",
-        hint: "A popular sport played with a spherical ball."
-    },
-    {
-        word: "chocolate",
-        hint: "A sweet treat made from cocoa beans."
-    },
-    {
-        word: "butterfly",
-        hint: "An insect with colorful wings and a slender body."
-    },
-    {
-        word: "history",
-        hint: "The study of past events and human civilization."
-    },
-    {
-        word: "pizza",
-        hint: "A savory dish consisting of a round, flattened base with toppings."
-    },
-    {
-        word: "jazz",
-        hint: "A genre of music characterized by improvisation and syncopation."
-    },
-    {
-        word: "camera",
-        hint: "A device used to capture and record images or videos."
-    },
-    {
-        word: "diamond",
-        hint: "A precious gemstone known for its brilliance and hardness."
-    },
-    {
-        word: "adventure",
-        hint: "An exciting or daring experience."
-    },
-    {
-        word: "science",
-        hint: "The systematic study of the structure and behavior of the physical and natural world."
-    },
-    {
-        word: "bicycle",
-        hint: "A human-powered vehicle with two wheels."
-    },
-    {
-        word: "sunset",
-        hint: "The daily disappearance of the sun below the horizon."
-    },
-    {
-        word: "coffee",
-        hint: "A popular caffeinated beverage made from roasted coffee beans."
-    },
-    {
-        word: "dance",
-        hint: "A rhythmic movement of the body often performed to music."
-    },
-    {
-        word: "galaxy",
-        hint: "A vast system of stars, gas, and dust held together by gravity."
-    },
-    {
-        word: "orchestra",
-        hint: "A large ensemble of musicians playing various instruments."
-    },
-    {
-        word: "volcano",
-        hint: "A mountain or hill with a vent through which lava, rock fragments, hot vapor, and gas are ejected."
-    },
-    {
-        word: "novel",
-        hint: "A long work of fiction, typically with a complex plot and characters."
-    },
-    {
-        word: "sculpture",
-        hint: "A three-dimensional art form created by shaping or combining materials."
-    },
-    {
-        word: "symphony",
-        hint: "A long musical composition for a full orchestra, typically in multiple movements."
-    },
-    {
-        word: "architecture",
-        hint: "The art and science of designing and constructing buildings."
-    },
-    {
-        word: "ballet",
-        hint: "A classical dance form characterized by precise and graceful movements."
-    },
-    {
-        word: "astronaut",
-        hint: "A person trained to travel and work in space."
-    },
-    {
-        word: "waterfall",
-        hint: "A cascade of water falling from a height."
-    },
-    {
-        word: "technology",
-        hint: "The application of scientific knowledge for practical purposes."
-    },
-    {
-        word: "rainbow",
-        hint: "A meteorological phenomenon that is caused by reflection, refraction, and dispersion of light."
-    },
-    {
-        word: "universe",
-        hint: "All existing matter, space, and time as a whole."
-    },
-    {
-        word: "piano",
-        hint: "A musical instrument played by pressing keys that cause hammers to strike strings."
-    },
-    {
-        word: "vacation",
-        hint: "A period of time devoted to pleasure, rest, or relaxation."
-    },
-    {
-        word: "rainforest",
-        hint: "A dense forest characterized by high rainfall and biodiversity."
-    },
-    {
-        word: "theater",
-        hint: "A building or outdoor area in which plays, movies, or other performances are staged."
-    },
-    {
-        word: "telephone",
-        hint: "A device used to transmit sound over long distances."
-    },
-    {
-        word: "language",
-        hint: "A system of communication consisting of words, gestures, and syntax."
-    },
-    {
-        word: "desert",
-        hint: "A barren or arid land with little or no precipitation."
-    },
-    {
-        word: "sunflower",
-        hint: "A tall plant with a large yellow flower head."
-    },
-    {
-        word: "fantasy",
-        hint: "A genre of imaginative fiction involving magic and supernatural elements."
-    },
-    {
-        word: "telescope",
-        hint: "An optical instrument used to view distant objects in space."
-    },
-    {
-        word: "breeze",
-        hint: "A gentle wind."
-    },
-    {
-        word: "oasis",
-        hint: "A fertile spot in a desert where water is found."
-    },
-    {
-        word: "photography",
-        hint: "The art, process, or practice of creating images by recording light or other electromagnetic radiation."
-    },
-    {
-        word: "safari",
-        hint: "An expedition or journey, typically to observe wildlife in their natural habitat."
-    },
-    {
-        word: "planet",
-        hint: "A celestial body that orbits a star and does not produce light of its own."
-    },
-    {
-        word: "river",
-        hint: "A large natural stream of water flowing in a channel to the sea, a lake, or another such stream."
-    },
-    {
-        word: "tropical",
-        hint: "Relating to or situated in the region between the Tropic of Cancer and the Tropic of Capricorn."
-    },
-    {
-        word: "mysterious",
-        hint: "Difficult or impossible to understand, explain, or identify."
-    },
-    {
-        word: "enigma",
-        hint: "Something that is mysterious, puzzling, or difficult to understand."
-    },
-    {
-        word: "paradox",
-        hint: "A statement or situation that contradicts itself or defies intuition."
-    },
-    {
-        word: "puzzle",
-        hint: "A game, toy, or problem designed to test ingenuity or knowledge."
-    },
-    {
-        word: "whisper",
-        hint: "To speak very softly or quietly, often in a secretive manner."
-    },
-    {
-        word: "shadow",
-        hint: "A dark area or shape produced by an object blocking the light."
-    },
-    {
-        word: "secret",
-        hint: "Something kept hidden or unknown to others."
-    },
-    {
-        word: "curiosity",
-        hint: "A strong desire to know or learn something."
-    },
-    {
-        word: "unpredictable",
-        hint: "Not able to be foreseen or known beforehand; uncertain."
-    },
-    {
-        word: "obfuscate",
-        hint: "To confuse or bewilder someone; to make something unclear or difficult to understand."
-    },
-    {
-        word: "unveil",
-        hint: "To make known or reveal something previously secret or unknown."
-    },
-    {
-        word: "illusion",
-        hint: "A false perception or belief; a deceptive appearance or impression."
-    },
-    {
-        word: "moonlight",
-        hint: "The light from the moon."
-    },
-    {
-        word: "vibrant",
-        hint: "Full of energy, brightness, and life."
-    },
-    {
-        word: "nostalgia",
-        hint: "A sentimental longing or wistful affection for the past."
-    },
-    {
-        word: "brilliant",
-        hint: "Exceptionally clever, talented, or impressive."
-    },
+    { word: "music", hint: "Makes you feel good, like your favorite song." },
+    { word: "air", hint: "What you breathe to stay alive." },
+    { word: "hill", hint: "A small mountain." },
+    { word: "art", hint: "Colors on paper that can be hung on walls." },
+    { word: "star", hint: "A glowing point in the night sky." },
+    { word: "ball", hint: "Used in sports like soccer or basketball." },
+    { word: "cocoa", hint: "Used to make chocolate." },
+    { word: "insect", hint: "Small creature with six legs." },
+    { word: "past", hint: "Time that has gone by." },
+    { word: "food", hint: "What you eat for nourishment." },
+    { word: "jazz", hint: "A type of music." },
+    { word: "photo", hint: "A picture taken with a camera." },
+    { word: "rock", hint: "A hard substance found in the ground." },
+    { word: "trip", hint: "A journey or vacation." },
+    { word: "study", hint: "To learn about something." },
+    { word: "ride", hint: "To travel in a vehicle." },
+    { word: "sun", hint: "The star at the center of our solar system." },
+    { word: "drink", hint: "Liquid that you consume." },
+    { word: "beat", hint: "The rhythm of music." },
+    { word: "moon", hint: "The natural satellite of Earth." },
+    { word: "fire", hint: "A hot, burning flame." },
+    { word: "long", hint: "Measuring a great distance." },
+    { word: "3Dart", hint: "Art that has depth." },
+    { word: "play", hint: "To engage in activity for enjoyment." },
+    { word: "clay", hint: "A type of soil that is often molded." },
+    { word: "make", hint: "To create or produce something." },
+    { word: "arch", hint: "A curved structure." },
+    { word: "form", hint: "The shape or structure of something." },
+    { word: "tool", hint: "An instrument used to do work." },
+    { word: "rain", hint: "Water falling from the sky." },
+    { word: "star", hint: "A famous person in a particular field." },
+    { word: "good", hint: "Of high quality or excellence." },
+    { word: "hard", hint: "Difficult to bend or break." },
+    { word: "dark", hint: "Lacking light." },
+    { word: "know", hint: "To be aware of something." },
+    { word: "bird", hint: "A warm-blooded vertebrate with feathers." },
+    { word: "home", hint: "A place where one lives." },
+    { word: "baby", hint: "A very young child." },
+    { word: "fall", hint: "To move downward." },
+    { word: "book", hint: "A written or printed work." },
+    { word: "work", hint: "Activity involving mental or physical effort." },
+    { word: "plan", hint: "A detailed proposal for doing or achieving something." },
+    { word: "rest", hint: "To cease work or movement in order to relax." },
+    { word: "deep", hint: "Extending far down from the top or surface." },
+    { word: "high", hint: "Of great vertical extent." },
+    { word: "wide", hint: "Of great or more than average width." },
+    { word: "rich", hint: "Having a great deal of money or assets." },
+    { word: "poor", hint: "Lacking sufficient money to live at a standard considered comfortable." },
+    { word: "loud", hint: "Producing or capable of producing much noise." },
+    { word: "soft", hint: "Easy to mold, cut, compress, or fold." },
+    { word: "slow", hint: "Moving or operating at a low speed." },
+    { word: "fast", hint: "Moving or capable of moving at high speed." },
+    { word: "safe", hint: "Protected from or not exposed to danger or risk." },
+    { word: "warm", hint: "Having or showing enthusiasm, affection, or kindness." },
+    { word: "cool", hint: "Of or at a fairly low temperature." },
+    { word: "free", hint: "Not under the control or in the power of another." },
+    { word: "true", hint: "In accordance with fact or reality." },
 ];
 
 // Variables
@@ -341,7 +138,7 @@ function endGame(win) {
   if (win) {
     gameExe.innerHTML = `
       <div class="con">
-        <img src="images/win.gif" alt="gif" />
+        <img src="images/victory.gif" alt="gif" />
         <h4>Congratulations!</h4>
         <p>You won!</p>
         <button class="play-again">Play Again</button>
